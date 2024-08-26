@@ -23,7 +23,7 @@ void changeDirectory() {
 }
 int main() {
     while (true) {
-        cout << "MAIN MENU\n1. Display Files\n2. Create Directory\n3. Change Directory\n4. Exit\nChoose an option: ";
+        cout << "MAIN MENU\n1.Display Files\n2.Create Directory\n3.Change Directory\n4.Exit\nChoose an option: ";
         int choice;
         cin >> choice;
         switch (choice) {
@@ -31,7 +31,7 @@ int main() {
             case 2: createDirectory(); break;
             case 3: changeDirectory(); break;
             case 4: return 0;
-            default: cout << "Invalid option! Try again.\n";
+            default: cout << "Invalid option! Please try again.\n";
         }
     }
 }
