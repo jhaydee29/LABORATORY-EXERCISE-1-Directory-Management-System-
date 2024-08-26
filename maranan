@@ -14,3 +14,12 @@ void creatDirectory(){
   cout << "Directory'" << dirName << "' created!\nPress Enter...\n";
     cin.ignore().get();
 }
+void changeDirectory() {
+    string dirName;
+    cout << "Enter directory and switch to: ";
+    cin >> dirName;
+
+}
+int main() {
+    while (true) {
+        cout << "MAIN MENU\n1. Display Files\n2. Create Directory\n3. Change Directory\n4. Exit\nChoose an option: ";
