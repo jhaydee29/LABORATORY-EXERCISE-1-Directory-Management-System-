@@ -1,0 +1,16 @@
+#include <iostream>
+#include <string>  
+using namespace std;
+
+void displayFiles() {
+  cout <<"Listing files: \nfile1.txt\nfile2.cpp\nreport.doc\nimage.png/nPress Enter...\n";
+  cin.ignore().get();
+}  
+
+void creatDirectory(){
+  string dirName;
+  cout << "Enter new directory name: ";
+  cin >> dirName;
+  cout << "Directory'" << dirName << "' created!\nPress Enter...\n";
+    cin.ignore().get();
+}
