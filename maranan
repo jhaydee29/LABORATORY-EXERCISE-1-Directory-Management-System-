@@ -3,7 +3,7 @@
 using namespace std;
 
 void displayFiles() {
-  cout <<"Listing files: \nfile1.txt\nfile2.cpp\nreport.doc\nimage.png/nPress Enter...\n";
+  cout <<"List of files: \nfile1.txt\nfile2.cpp\nreport.doc\nimage.png/nPress Enter...\n";
   cin.ignore().get();
 }  
 
@@ -18,8 +18,20 @@ void changeDirectory() {
     string dirName;
     cout << "Enter directory and switch to: ";
     cin >> dirName;
-
+    cout << "Now in: C:\\Users\\UserName\\" << dirName << "\nPress Enter...\n";
+    cin.ignore().get();
 }
 int main() {
     while (true) {
         cout << "MAIN MENU\n1. Display Files\n2. Create Directory\n3. Change Directory\n4. Exit\nChoose an option: ";
+        int choice;
+        cin >> choice;
+        switch (choice) {
+            case 1: displayFiles(); break;
+            case 2: createDirectory(); break;
+            case 3: changeDirectory(); break;
+            case 4: return 0;
+            default: cout << "Invalid option! Try again.\n";
+        }
+    }
+}
