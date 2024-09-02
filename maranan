@@ -11,7 +11,6 @@ int main() {
     int selection;
     while (true) {
         cout << " Main Menu: " << endl;
-        cout << "--------------------------------\n";
         cout << "1. Show List of Files\n";
         cout << "2. Create New Folder\n";
         cout << "3. Change Current Directory\n";
@@ -41,7 +40,7 @@ int main() {
 void display_files() {
     int option;
     cout << " FILE LIST DETAILS:" << endl;
-    cout << "--------------------------------------\n" << endl;
+   
     cout << "1. Show All Files\n";
     cout << "2. Show Files by Extension\n";
     cout << "3. Show Files by Name\n";
